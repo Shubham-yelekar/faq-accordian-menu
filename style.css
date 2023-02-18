@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+:root {
+    --clr-text-dark-blue: hsl(238, 29%, 16%);
+    --clr-text-soft-red:  hsl(14, 88%, 65%);
+    --clr-text-very-dark-gray-blue: hsl(237, 12%, 33%);
+    --clr-text-dark-gray-blue: hsl(240, 6%, 50%);
+    
+    --clr-bg-gradient-soft-voilet: hsl(273, 75%, 66%);
+    --clr-bg-gradient-soft-blue: hsl(240, 73%, 65%);
+    
+
+
+    --ff-primary: 'Kumbh Sans', sans-serif;
+
+    
+  }
+
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+
+    
+  }
+  
+  /* font sizing */
+  html {
+    font-size: 62.5%;
+  }
+
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+   
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  button {
+    cursor: pointer;
+  }
+
+  /* utilities */
+  .flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+  }
+
+  body {
+    background: linear-gradient(180deg, #AF67E9 0%, #6565E7 100%);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+
+  .container {
+    background-color: #fff;
+    width: 400px;
+    border-radius: 2rem;
+    
+  }
+
+
+.image-wrapper {
+  /* outline: 1px solid red; */
+  height: 100px;
+  position: relative;
+}
+
+.image {
+  width: 400px;
+  height: 200px;
+  background-image: url('./images/illustration-woman-online-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  top: -120px;
+}
+
+.image-bg {
+  width: 400px;
+  height: 200px;
+  background-image: url('./images/bg-pattern-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -40px;
+}
+
+/* FAQ section */
+
+h1 {
+  padding: 3rem 0;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+
+.qna-wrapper {
+  padding: 0 2rem;
+  
+}
+
+.question-wrapper {
+  cursor: pointer;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 1.8rem 0;
+}
+
+
+.question-wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  border:none;
+  background-color: transparent;
+  font-size: 1.4rem;
+  padding: 0;
+  color: var(--clr-text-dark-blue);
+  
+  width: 100%;
+}
+
+
+.answer-wrapper {
+  display: none;
+  font-size: 1.6rem;
+  color: var(--clr-text-very-dark-gray-blue);
+}
+
+
+.question-wrapper.active .answer-wrapper{
+  display: block;
+  font-weight: 400;
+}
+
+
+@media screen {
+  
+}
